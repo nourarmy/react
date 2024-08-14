@@ -17,7 +17,7 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^4.2.3"
   },
-  "homepage": "https://nourarmy.github.io/react",
+  "homepage": "https://nourarmy.github.io/imc-website",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
