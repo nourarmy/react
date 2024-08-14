@@ -1,0 +1,92 @@
+/* services.css */
+.services-slider-container {
+  width: 100%;
+  height: auto; /* Full viewport height */
+  position: relative; /* For positioning arrows */
+  overflow: hidden; /* Hide overflow for a clean look */
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%); /* Gradient background */
+}
+
+.services-slider-title {
+  text-align: center;
+  margin-top: auto;
+  color: white;
+  font-size: 42px; /* Larger title font size */
+  margin: 20px 0; /* Margin for spacing */
+  font-weight: bold;
+}
+
+.services-slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Full height of the slider container */
+  width: 100%; /* Full width of the slider container */
+}
+
+.services-card {
+  background: rgb(255, 255, 255);
+  margin-top: 80px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Adjust padding as needed */
+  text-align: center;
+  width: 65%; /* Adjust width as needed */
+  max-width: 800px; /* Maximum width of the card */
+  height: 65%; /* Auto height to accommodate content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.services-icon-container {
+  margin-bottom: 30px; /* Increased margin for spacing */
+}
+
+.services-icon-img {
+  width: 100px; /* Larger icon size */
+  height: auto;
+  margin-top: 20px;
+}
+
+.services-title {
+  font-size: 35px; /* Larger title font size */
+  margin: 20px 0; /* Increased margin for spacing */
+  color: #333;
+}
+
+.services-description {
+  font-size: 25px; /* Larger description font size */
+  color: #666;
+}
+
+/* Arrow styles */
+.services-custom-arrow {
+  font-size: 30px; /* Larger arrow size */
+  color: #333;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  width: 50px; /* Larger arrow size */
+  height: 50px; /* Larger arrow size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.services-custom-arrow:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.services-custom-arrow.prev {
+  left: 20px; /* Adjust as needed */
+}
+
+.services-custom-arrow.next {
+  right: 20px; /* Adjust as needed */
+}
