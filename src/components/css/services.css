@@ -4,8 +4,15 @@
   height: auto; /* Full viewport height */
   position: relative; /* For positioning arrows */
   overflow: hidden; /* Hide overflow for a clean look */
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%); /* Gradient background */
+  background: linear-gradient(90deg, #349FD9, #FFFFFF, #0069d9);
+  background-size: 300%;
+  transition: background-position 0.5s ease;
+  padding: 20px; /* Adjust as needed */
 }
+.services-slider-container:hover {
+  background-position: 100%;
+}
+
 
 .services-slider-title {
   text-align: center;
@@ -38,6 +45,11 @@
   flex-direction: column;
   justify-content: center; /* Center content vertically */
   align-items: center; /* Center content horizontally */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.services-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .services-icon-container {
@@ -54,6 +66,10 @@
   font-size: 35px; /* Larger title font size */
   margin: 20px 0; /* Increased margin for spacing */
   color: #333;
+  transition: color 0.3s ease;
+}
+.services:hover {
+  color: #349FD9;
 }
 
 .services-description {
@@ -79,14 +95,3 @@
   transition: background 0.3s ease;
 }
 
-.services-custom-arrow:hover {
-  background: rgba(255, 255, 255, 1);
-}
-
-.services-custom-arrow.prev {
-  left: 20px; /* Adjust as needed */
-}
-
-.services-custom-arrow.next {
-  right: 20px; /* Adjust as needed */
-}

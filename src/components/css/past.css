@@ -1,0 +1,143 @@
+.event-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  text-align: center;
+}
+
+.wave {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 0;
+}
+
+.title1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #359FD9 0%, #0427d5f1 33%, #030a45f7 66%, #000643 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.next-button, .prev-button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.next-button:hover, .prev-button:hover {
+  transform: scale(1.2);
+}
+
+.arrow {
+  background: linear-gradient(135deg, #359FD9 0%, #0427d5f1 33%, #030a45f7 66%, #000643 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.prev-button {
+  position: absolute;
+  left: 10px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.next-button {
+  position: absolute;
+  right: 10px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.text-container h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.partnership-bar {
+  background-color: #0427d5f1; /* Match with your theme */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partnership-bar h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #359FD9 0%, #0427d5f1 33%, #030a45f7 66%, #000643 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.partner-logo {
+  max-width: 150px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+  transform: scale(1.1);
+}
