@@ -1,7 +1,7 @@
 
 
 .background-wrapper {
-  background: linear-gradient(90deg, #ffffff,#ffffff, #0069d9);
+  background: linear-gradient(90deg, #ffffff,#8bc8e9, #0069d9);
   background-size: 300%;
   transition: background-position 0.5s ease;
   padding: 20px; /* Adjust as needed */
@@ -82,4 +82,74 @@
   text-align: justify;
   color: #555;
   transition: color 0.3s ease;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 1024px) {
+  .background-wrapper {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .about-us-container {
+    padding: 50px 20px; /* Adjusted padding for smaller screens */
+    margin: 20px; /* Adjusted margin for smaller screens */
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .text-container h2 {
+    font-size: 28px; /* Adjusted font size for smaller screens */
+  }
+
+  .text-container p {
+    font-size: 18px; /* Adjusted font size for smaller screens */
+  }
+
+  .image-container img {
+    max-width: 400px; /* Ensure image scales with container */
+  }
+}
+
+@media (max-width: 768px) {
+  .background-wrapper {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .about-us-container {
+    padding: 30px 10px; /* Adjusted padding for smaller screens */
+  }
+
+  .text-container h2 {
+    font-size: 24px; /* Adjusted font size for smaller screens */
+  }
+
+  .text-container p {
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+
+  .image-container img {
+    max-width: 300px; /* Ensure image scales with container */
+  }
+}
+
+@media (max-width: 480px) {
+  .background-wrapper {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .about-us-container {
+    padding: 20px 5px; /* Adjusted padding for smaller screens */
+  }
+
+  .text-container h2 {
+    font-size: 20px; /* Adjusted font size for smaller screens */
+  }
+
+  .text-container p {
+    font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+
+  .image-container img {
+    max-width: 100%; /* Ensure image scales with container */
+  }
 }

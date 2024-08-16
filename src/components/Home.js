@@ -12,6 +12,7 @@ const HomeComponent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [opacity, setOpacity] = useState(1);
   const [wordIndex, setWordIndex] = useState(0);
+  const [navbarActive, setNavbarActive] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,6 +55,10 @@ const HomeComponent = () => {
     console.log("Search button clicked");
   };
 
+  const toggleNavbar = () => {
+    setNavbarActive(!navbarActive);
+  };
+
   return (
     <>
       <nav className="navbar">
@@ -61,16 +66,19 @@ const HomeComponent = () => {
           <div className="logo-container">
             <img src={logo} alt="IMC Logo" className="logo-img" />
           </div>
-          <ul className="navbar-nav">
-  <li><a onClick={() => scrollToSection("home")}>Home</a></li>
-  <li><a onClick={() => scrollToSection("about")}>About</a></li>
-  <li><a onClick={() => scrollToSection("services")}>Services</a></li>
-  <li><a onClick={() => scrollToSection("events")}>Events</a></li>
-  <li><a onClick={() => scrollToSection("team")}>Team</a></li>
-  <li>
-    <button class="join-button">Join Us</button>
-  </li>
-</ul>
+          <div className="navbar-toggle" onClick={toggleNavbar}>
+            ☰
+          </div>
+          <ul className={`navbar-nav ${navbarActive ? "active" : ""}`}>
+            <li><a onClick={() => scrollToSection("home")}>Home</a></li>
+            <li><a onClick={() => scrollToSection("about")}>About</a></li>
+            <li><a onClick={() => scrollToSection("services")}>Services</a></li>
+            <li><a onClick={() => scrollToSection("events")}>Events</a></li>
+            <li><a onClick={() => scrollToSection("team")}>Team</a></li>
+            <li>
+              <button className="join-button">Join Us</button>
+            </li>
+          </ul>
         </div>
       </nav>
       <div id="home" className="home-component">

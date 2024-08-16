@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import './css/services.css'; // Import your CSS styles
 
-// Import your icon images
 import Icon1 from './img/i1.png';
 import Icon2 from './img/i2.png';
 import Icon3 from './img/i3.png';
-
 
 const Services = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,15 +35,15 @@ const Services = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // Show one slide at a time
+    slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '20%', // Adjust the padding around the centered slide
+    centerPadding: '20%',
     focusOnSelect: true,
     autoplay: true,
-    autoplaySpeed: 5000, // Longer auto-slide duration
+    autoplaySpeed: 5000,
     beforeChange: (current, next) => setCurrentSlide(next),
-   
+    arrows: false, // Disable arrows
   };
 
   return (

@@ -52,7 +52,7 @@
     color: #fff;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #359FD9 0%, #0427d5f1 33%, #030a45f7 66%, #000643 100%);
+    background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -65,39 +65,19 @@
     margin: 0 auto;
   }
   
-  .next-button, .prev-button {
-    background: transparent;
-    border: none;
-    color: #fff;
-    font-size: 2rem;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    z-index: 2;
-  }
+  
   
   .next-button:hover, .prev-button:hover {
     transform: scale(1.2);
   }
   
   .arrow {
-    background: linear-gradient(135deg, #359FD9 0%, #0427d5f1 33%, #030a45f7 66%, #000643 100%);
+    background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 700;
   }
-  
-  .prev-button {
-    position: absolute;
-    left: 10px;
-    bottom: 50%;
-    transform: translateY(50%);
-  }
-  
-  .next-button {
-    position: absolute;
-    right: 10px;
-    bottom: 50%;
-    transform: translateY(50%);
-  }
+
   
   .text-container h2 {
     font-size: 3rem;

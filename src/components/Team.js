@@ -26,8 +26,8 @@ const Team = () => {
     slidesToScroll: 1,
     centerMode: true,
     focusOnSelect: true,
-    autoplay: true, // Enable auto-play
-    autoplaySpeed: 3000, // Duration of each slide in milliseconds
+    autoplay: true,
+    autoplaySpeed: 4000, // Duration of each slide in milliseconds
     beforeChange: (current, next) => setCurrentSlide(next),
   };
 

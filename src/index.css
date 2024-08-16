@@ -1,6 +1,11 @@
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body,
 html {
   font-family: "Open Sans", sans-serif;
@@ -9,8 +14,11 @@ html {
   color: #777;
   font-weight: 400;
   width: 100%;
-  height: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 h2,
 h3,
 h4 {

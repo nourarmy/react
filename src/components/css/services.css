@@ -1,97 +1,132 @@
 /* services.css */
 .services-slider-container {
   width: 100%;
-  height: auto; /* Full viewport height */
-  position: relative; /* For positioning arrows */
-  overflow: hidden; /* Hide overflow for a clean look */
+  height: auto;
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(90deg, #349FD9, #FFFFFF, #0069d9);
   background-size: 300%;
   transition: background-position 0.5s ease;
-  padding: 20px; /* Adjust as needed */
+  padding: 20px;
+  
 }
+
 .services-slider-container:hover {
   background-position: 100%;
 }
 
-
 .services-slider-title {
   text-align: center;
-  margin-top: auto;
   color: white;
-  font-size: 42px; /* Larger title font size */
-  margin: 20px 0; /* Margin for spacing */
+  font-size: 42px;
+  margin: 20px 0;
   font-weight: bold;
 }
-
-.services-slick-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%; /* Full height of the slider container */
-  width: 100%; /* Full width of the slider container */
+.services-slider-title:hover {
+  
+  transform: scale(1.05); /* Slightly scale up on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add text shadow on hover */
 }
+
 
 .services-card {
   background: rgb(255, 255, 255);
-  margin-top: 80px;
+  margin: 0 auto;
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  padding: 30px; /* Adjust padding as needed */
+  padding: 30px;
   text-align: center;
-  width: 65%; /* Adjust width as needed */
-  max-width: 800px; /* Maximum width of the card */
-  height: 65%; /* Auto height to accommodate content */
+  max-width: 800px;
+  height: auto;
+  
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  justify-content: center;
+  align-items: center;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+
 .services-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .services-icon-container {
-  margin-bottom: 30px; /* Increased margin for spacing */
+  margin-bottom: 30px;
 }
 
 .services-icon-img {
-  width: 100px; /* Larger icon size */
+  width: 100px;
   height: auto;
   margin-top: 20px;
 }
 
 .services-title {
-  font-size: 35px; /* Larger title font size */
-  margin: 20px 0; /* Increased margin for spacing */
+  font-size: 35px;
+  margin: 20px 0;
   color: #333;
   transition: color 0.3s ease;
 }
-.services:hover {
-  color: #349FD9;
-}
 
 .services-description {
-  font-size: 25px; /* Larger description font size */
+  font-size: 25px;
   color: #666;
 }
 
-/* Arrow styles */
-.services-custom-arrow {
-  font-size: 30px; /* Larger arrow size */
-  color: #333;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-  width: 50px; /* Larger arrow size */
-  height: 50px; /* Larger arrow size */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-  z-index: 1;
-  transition: background 0.3s ease;
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .services-slider-title {
+    font-size: 36px;
+  }
+
+  .services-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .services-title {
+    font-size: 30px;
+  }
+
+  .services-description {
+    font-size: 22px;
+  }
 }
 
+@media (max-width: 768px) {
+  .services-slider-title {
+    font-size: 30px;
+  }
+
+  .services-card {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .services-title {
+    font-size: 26px;
+  }
+
+  .services-description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-slider-title {
+    font-size: 24px;
+  }
+
+  .services-card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .services-title {
+    font-size: 22px;
+  }
+
+  .services-description {
+    font-size: 16px;
+  }
+}
